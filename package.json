@@ -1,0 +1,40 @@
+{
+  "name": "autogit-plugin-confirmation",
+  "description": "A plugin for asking for confirmation before proceeding.",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "compile": "tsc --skipLibCheck",
+    "compile:watch": "tsc --skipLibCheck --watch",
+    "lint": "tslint \"src/**/*.ts*\" --force",
+    "prepublish": "npm run clean && npm run lint && npm run compile"
+  },
+  "bugs": {
+    "url": "https://github.com/fabiospampinato/autogit-plugin-confirmation/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Fabio Spampinato",
+    "email": "spampinabio@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fabiospampinato/autogit-plugin-confirmation.git"
+  },
+  "keywords": [
+    "autogit",
+    "plugin",
+    "confirmation"
+  ],
+  "dependencies": {
+    "listr-input": "^0.1.3"
+  },
+  "devDependencies": {
+    "@types/node": "^10.9.4",
+    "rimraf": "^2.6.0",
+    "tslint": "^4.4.2",
+    "typescript": "^3.0.3"
+  }
+}
