@@ -1,7 +1,7 @@
 {
   "name": "autogit-plugin-confirmation",
   "description": "A plugin for asking for confirmation before proceeding.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
